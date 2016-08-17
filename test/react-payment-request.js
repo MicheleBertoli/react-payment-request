@@ -21,7 +21,7 @@ describe('React Payment Request', () => {
 
   beforeEach(() => {
     props = {
-      methodData: {},
+      methodData: [],
       details: {},
       options: {},
       onSuccess: sinon.spy(),
