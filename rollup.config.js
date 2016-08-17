@@ -17,4 +17,7 @@ export default {
     process.env.BUILD === 'production' ? uglify() : () => {},
   ],
   external: ['react'],
+  globals: {
+    react: 'React',
+  },
 }

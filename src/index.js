@@ -1,1 +1,2 @@
-export { default } from './react-payment-request'
+const ReactPaymentRequest = require('./react-payment-request')
+module.exports = ReactPaymentRequest
