@@ -9,7 +9,8 @@
   "scripts": {
     "test": "mocha --compilers js:buble/register",
     "start": "rollup -c -w",
-    "build": "rollup -c --environment BUILD:production"
+    "build": "rollup -c --environment BUILD:production",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
