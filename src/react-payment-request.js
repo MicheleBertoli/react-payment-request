@@ -4,7 +4,7 @@ const createPaymentRequest = ({ methodData, details, options }) =>
   new window.PaymentRequest(methodData, details, options)
 
 const addEventListener = (request, event, callback) => {
-  request.addEventListener('shippingaddresschange', e => {
+  request.addEventListener(event, e => {
     const promise = new Promise((resolve, reject) => callback(request, resolve, reject))
     e.updateWith(promise)
   })
