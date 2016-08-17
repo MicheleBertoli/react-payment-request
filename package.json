@@ -1,0 +1,32 @@
+{
+  "name": "react-payment-request",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/react-payment-request.js",
+  "scripts": {
+    "test": "mocha --compilers js:buble/register",
+    "start": "rollup -c -w",
+    "build": "rollup -c --environment BUILD:production"
+  },
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^15.3.0"
+  },
+  "devDependencies": {
+    "buble": "^0.13.1",
+    "eslint": "^3.3.1",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.13.0",
+    "eslint-plugin-jsx-a11y": "^2.1.0",
+    "eslint-plugin-react": "^6.1.1",
+    "mocha": "^3.0.2",
+    "rollup": "^0.34.9",
+    "rollup-plugin-buble": "^0.13.0",
+    "rollup-plugin-commonjs": "^3.3.1",
+    "rollup-plugin-json": "^2.0.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^2.5.0"
+  }
+}
