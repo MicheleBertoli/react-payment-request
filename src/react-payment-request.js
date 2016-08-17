@@ -5,7 +5,7 @@ const createPaymentRequest = ({ methodData, details, options }) =>
 
 const addEventListener = (request, event, callback) => {
   request.addEventListener('shippingaddresschange', e => {
-    e.updateWith(details => Promise.resolve(callback(details)))
+    e.updateWith(Promise.resolve(callback(e, request)))
   })
 }
 
@@ -51,7 +51,7 @@ class ReactPaymentRequest extends React.Component {
 ReactPaymentRequest.propTypes = {
   children: React.PropTypes.any,
   details: React.PropTypes.object,
-  methodData: React.PropTypes.object,
+  methodData: React.PropTypes.array,
   onError: React.PropTypes.func,
   onShippingAddressChange: React.PropTypes.func,
   onShippingOptionChange: React.PropTypes.func,
