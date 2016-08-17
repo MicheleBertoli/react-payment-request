@@ -3,13 +3,31 @@
   "version": "0.0.2",
   "description": "",
   "main": "dist/react-payment-request.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "mocha --compilers js:buble/register",
     "start": "rollup -c -w",
     "build": "rollup -c --environment BUILD:production"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicheleBertoli/react-payment-request.git"
+  },
+  "keywords": [
+    "react-component",
+    "poop"
+  ],
+  "author": [
+    "Michele Bertoli",
+    "Lucas Motta"
+  ],
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MicheleBertoli/react-payment-request/issues"
+  },
+  "homepage": "https://github.com/MicheleBertoli/react-payment-request#readme",
   "peerDependencies": {
     "react": "^15.3.0"
   },
