@@ -1,7 +1,7 @@
 # React Payment Request
 
 A [Payment Request](https://developers.google.com/web/fundamentals/primers/payment-request/) component for
-[React.js](https://facebook.github.io/react/).
+[React.js](https://facebook.github.io/react/)
 
 ## Installation
 
@@ -39,14 +39,14 @@ const updateTotal = shippingOption => {...}
     details.shippingOptions = updateTotal(request.shippingOption)
     resolve(details)
   }}
-  onSuccess={result => result.complete("success")}
+  onSuccess={result => result.complete('success')}
   options={options}
 >
   <button>Pay</button>
 </ReactPaymentRequest>
 ```
 
-## Api
+## API
 
 Parameter               | Type   | Description
 ----------------------- | ------ | -----------
