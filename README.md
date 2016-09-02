@@ -14,7 +14,7 @@ npm install react-payment-request --save
 ### Umd
 
 ```html
-<script src="https://npmcdn.com/react-payment-request/dist/react-payment-request.js"></script>
+<script src="https://unpkg.com/react-payment-request/dist/react-payment-request.js"></script>
 ```
 
 ## Usage
