@@ -1,7 +1,7 @@
 {
   "name": "react-payment-request",
   "version": "0.1.0",
-  "description": "",
+  "description": "A Payment Request component for React.js",
   "main": "dist/react-payment-request.js",
   "files": [
     "dist"
