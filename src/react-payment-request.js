@@ -1,4 +1,5 @@
 const React = require('react')
+const PropTypes = require('prop-types')
 
 const createPaymentRequest = ({ methodData, details, options }) =>
   new window.PaymentRequest(methodData, details, options)
@@ -50,14 +51,14 @@ class ReactPaymentRequest extends React.Component {
 }
 
 ReactPaymentRequest.propTypes = {
-  children: React.PropTypes.any,
-  details: React.PropTypes.object,
-  methodData: React.PropTypes.array,
-  onError: React.PropTypes.func,
-  onShippingAddressChange: React.PropTypes.func,
-  onShippingOptionChange: React.PropTypes.func,
-  onSuccess: React.PropTypes.func,
-  options: React.PropTypes.object,
+  children: PropTypes.any,
+  details: PropTypes.object,
+  methodData: PropTypes.array,
+  onError: PropTypes.func,
+  onShippingAddressChange: PropTypes.func,
+  onShippingOptionChange: PropTypes.func,
+  onSuccess: PropTypes.func,
+  options: PropTypes.object,
 }
 
 module.exports = ReactPaymentRequest
